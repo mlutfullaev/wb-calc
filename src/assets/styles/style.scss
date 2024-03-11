@@ -7,9 +7,10 @@
 }
 body {
   font-family: "Inter", sans-serif;
+  color: var(--primary);
 }
 
-button {
+.btn {
   padding: 8px 10px;
   font-size: 14px;
   display: flex;
@@ -17,4 +18,17 @@ button {
   align-items: center;
   gap: 8px;
   border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .3s;
+
+  svg {
+    transition: .3s;
+  }
+}
+
+.txt {
+  font-size: 14px;
+  color: var(--primary-50);
 }
