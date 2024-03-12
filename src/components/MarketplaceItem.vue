@@ -147,9 +147,6 @@ watch(marketplace, () => {
 <style lang="scss" scoped>
 .item {
   > .content {
-    @media (max-width: 450px) {
-      grid-template-columns: repeat(4, 1fr) !important;
-    }
     &.first {
       grid-template-columns: 20% 18% 100px 1fr 100px;
       padding-bottom: 20px;
@@ -162,6 +159,8 @@ watch(marketplace, () => {
         }
       }
       @media (max-width: 450px) {
+        grid-template-columns: repeat(4, 1fr);
+
         .form-item:nth-child(1) {
           grid-column: 1 / 5;
         }
@@ -191,15 +190,14 @@ watch(marketplace, () => {
         }
       }
       @media (max-width: 450px) {
-        .form-item:nth-child(2) {
-          grid-column: 2 / 5;
-        }
-        .form-item:nth-child(3) {
-          grid-column: 1 / 4;
+        grid-template-columns: 1fr 70px;
+
+        .form-item:nth-child(1) {
+          grid-column: 1 / 2;
         }
         .form-item:nth-child(5),
-        .form-item:nth-child(6) {
-          grid-column: 1 / 5;
+        .form-item:nth-child(6), {
+          grid-column: 1 / 3;
         }
       }
     }
