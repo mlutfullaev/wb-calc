@@ -69,7 +69,7 @@ const onClear = () => {
 
   @media (max-width: 768px) {
     padding: 0;
-    gap: 20px;
+    gap: 0;
     max-width: 100%;
   }
   .header {
@@ -98,9 +98,10 @@ const onClear = () => {
   }
   .item {
     @media (max-width: 768px) {
+      margin-bottom: 20px;
       padding: 20px;
       background: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1);
     }
   }
   .item-title {
