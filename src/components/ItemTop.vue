@@ -1,8 +1,7 @@
 <script setup>
-import {ref} from "vue";
+import {getCurrentInstance, ref, watch} from "vue";
 import {useStore} from "@/stores/store.js";
 
-const {clear} = useStore()
 const share = ref(false)
 
 const onShare = () => {
@@ -15,16 +14,11 @@ const onShare = () => {
     }
   }, 3000)
 }
-
-
-const onClear = () => {
-  clear()
-}
 </script>
 
 <template>
   <div class="item-top">
-    <button class="btn btn-reset" @click="onClear">
+    <button class="btn btn-reset" @click="$emit('clear')">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14 3.98665C11.78 3.76665 9.54667 3.65332 7.32 3.65332C6 3.65332 4.68 3.71999 3.36 3.85332L2 3.98665" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M5.66667 3.31334L5.81334 2.44001C5.92001 1.80668 6 1.33334 7.12667 1.33334H8.87334C10 1.33334 10.0867 1.83334 10.1867 2.44668L10.3333 3.31334" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>

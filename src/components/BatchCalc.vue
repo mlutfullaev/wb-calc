@@ -75,7 +75,7 @@ watch(amount, () => {
     }
     .content {
       display: flex;
-      width: max-content;
+      width: calc(100% - 20px);
 
       @media (max-width: 768px) {
         flex-wrap: wrap;
@@ -83,15 +83,18 @@ watch(amount, () => {
         .form-item {
           width: 100%;
           grid-column: 1 / 3;
-
-          input {
-            max-width: 300px;
-          }
+        }
+        input {
+          max-width: 300px;
         }
       }
       @media (max-width: 450px) {
         display: grid;
         grid-template-columns: 50% 50%;
+
+        input {
+          max-width: 100%;
+        }
         .batch-card {
           width: 100%;
           padding: 10px;
@@ -103,7 +106,6 @@ watch(amount, () => {
         }
       }
       @media (max-width: 320px) {
-        width: calc(100% - 20px);
         .batch-card {
           grid-column: 1 / 3 !important;
         }

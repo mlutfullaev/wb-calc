@@ -9,8 +9,16 @@ import CalcResults from "@/components/CalcResults.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import BatchCalc from "@/components/BatchCalc.vue";
 import ModalVideo from "@/components/ModalVideo.vue";
-const store = reactive({})
+import {useStore} from "@/stores/store.js";
 const modalActive = ref(false)
+const clearCount = ref(0)
+const {clear} = useStore()
+
+const onClear = () => {
+  clearCount.value = clearCount.value + 1;
+  console.log(clearCount.value)
+  clear()
+}
 </script>
 
 <template>
@@ -36,14 +44,14 @@ const modalActive = ref(false)
       </div>
     </div>
     <div class="item">
-      <ItemTop @openModal="modalActive = true" />
-      <ProductItem />
+      <ItemTop @clear="onClear" @openModal="modalActive = true" />
+      <ProductItem :key="clearCount" />
     </div>
-    <FFItem />
-    <MarketplaceItem />
-    <BillsAndElseItem />
-    <BatchCalc />
-    <CalcResults />
+    <FFItem :key="clearCount" />
+    <MarketplaceItem :key="clearCount" />
+    <BillsAndElseItem :key="clearCount" />
+    <BatchCalc :key="clearCount" />
+    <CalcResults :key="clearCount" />
     <ModalVideo :active="modalActive" @close="modalActive = false"/>
     <TheFooter />
   </div>

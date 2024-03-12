@@ -11,6 +11,7 @@ const initial = {
 }
 export const useStore = defineStore('store', () => {
   const state = ref(JSON.parse(localStorage.getItem('store2')) || initial)
+  const clearCount = ref(0)
 
   const changeState = (val) => {
     state.value = {...state.value, val}
@@ -19,9 +20,10 @@ export const useStore = defineStore('store', () => {
 
   const clear = () => {
     state.value = initial
+    clearCount.value = clearCount.value++
     localStorage.setItem('store', JSON.stringify(initial))
-    location.reload()
+    console.log(true)
   }
 
-  return {state, changeState, clear}
+  return {state, changeState, clear, clearCount}
 })
