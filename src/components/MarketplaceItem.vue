@@ -188,7 +188,7 @@ watch(marketplace, () => {
           grid-template-columns: 1fr 1fr;
         }
         .form-item:nth-child(5) {
-          display: none;
+          grid-column: 1 / 5;
         }
       }
       @media (max-width: 340px) {
