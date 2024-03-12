@@ -66,6 +66,10 @@ watch(props, () => {
       max-width: 700px;
       height: 400px;
     }
+    @media (max-width: 768px) {
+      max-width: 100%;
+      height: 250px;
+    }
     &.overlay {
       .overlay {
         opacity: 1;
