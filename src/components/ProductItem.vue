@@ -25,7 +25,7 @@ watch(product, () => {
           <HintUI hint="Выберите из списка товар" />
         </div>
         <model-select
-
+          _ngcontent-serverapp-c123
           :options="productOptions"
           v-model="product.object"
           placeholder="Выберите из списка"
@@ -36,14 +36,14 @@ watch(product, () => {
         <div class="form-label required">
           <p>Цена на WB, ₽</p>
         </div>
-        <input type="text" v-model="product.priceOnWB">
+        <input _ngcontent-serverapp-c127 type="text" v-model="product.priceOnWB">
       </div>
       <div class="form-item">
         <div class="form-label required">
           <p>Себестоимость, ₽</p>
           <HintUI hint="Закупочная цена товара" />
         </div>
-        <input type="text" v-model="product.costPrice">
+        <input _ngcontent-serverapp-c127 type="text" v-model="product.costPrice">
       </div>
     </div>
   </div>

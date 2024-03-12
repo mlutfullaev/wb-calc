@@ -54,7 +54,6 @@
   padding: 10px;
   background: var(--primary);
   color: #fff;
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -62,6 +61,9 @@
 
   a {
     color: #ffffff
+  }
+  @media (max-width: 768px) {
+    display: flex;
   }
   @media (max-width: 400px) {
     flex-direction: column

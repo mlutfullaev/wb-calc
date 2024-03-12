@@ -27,6 +27,7 @@ watch(bills, () => {
             <HintUI hint="Является необязательным для заполнения блоком. Данные из этого блока участвуют в расчете показателей прибыльности, следовательно, его заполнение сделает расчет прибыльности товара более достоверным." />
           </div>
           <model-select
+            _ngcontent-serverapp-c123
             :options="billModes"
             v-model="bills.billMode"
             placeholder="Выберите из списка"
@@ -38,7 +39,7 @@ watch(bills, () => {
             <p>Налоговая ставка, %</p>
             <HintUI hint="Стоимость упаковки товара за 1 единицу" />
           </div>
-          <input type="text" placeholder="Стоимость упаковки за 1 ед." v-model="bills.taxRate">
+          <input type="text" _ngcontent-serverapp-c127 placeholder="Стоимость упаковки за 1 ед." v-model="bills.taxRate">
         </div>
         <div class="form-item">
           <div class="form-label">
@@ -47,6 +48,7 @@ watch(bills, () => {
           <input
             disabled
             type="text"
+            _ngcontent-serverapp-c127
             v-model="bills.taxRateRUB">
         </div>
       </div>
@@ -62,6 +64,7 @@ watch(bills, () => {
           <input
             placeholder="Реклама, форсмажор и т.д."
             type="text"
+            _ngcontent-serverapp-c127
             v-model="bills.elses">
         </div>
       </div>

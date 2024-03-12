@@ -28,7 +28,7 @@ watch(amount, () => {
             <p>Мои вложения, ₽</p>
             <HintUI hint="Выберите из списка товар" />
           </div>
-          <input placeholder="Введите сумму инвестиции" v-model="amount" type="text">
+          <input _ngcontent-serverapp-c127 placeholder="Введите сумму инвестиции" v-model="amount" type="text">
         </div>
         <div class="batch-card">
           <span>Кол-во товара</span> <HintUI hint="helloooo"/>

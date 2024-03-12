@@ -25,6 +25,7 @@ watch(marketplace, () => {
           <HintUI hint="Является необязательным для заполнения блоком. Данные из этого блока участвуют в расчете показателей прибыльности, следовательно, его заполнение сделает расчет прибыльности товара более достоверным." />
         </div>
         <model-select
+          _ngcontent-serverapp-c123
             :options="storeLocations"
             v-model="marketplace.storeLocation"
             placeholder="Выберите из списка"
@@ -39,6 +40,7 @@ watch(marketplace, () => {
         <input
           disabled
           type="text"
+          _ngcontent-serverapp-c127
           v-model="marketplace.wbComission">
       </div>
       <div class="form-item">
@@ -48,6 +50,7 @@ watch(marketplace, () => {
         <input
           disabled
           type="text"
+          _ngcontent-serverapp-c127
           v-model="marketplace.wbComissionRUB">
       </div>
       <div class="form-item">
@@ -59,17 +62,21 @@ watch(marketplace, () => {
           <input
             placeholder="Длина уп, см"
             type="text"
+            _ngcontent-serverapp-c127
             v-model="marketplace.lengthSM">
           <input
             placeholder="Ширина уп, см"
             type="text"
+            _ngcontent-serverapp-c127
             v-model="marketplace.widthSM">
           <input
             placeholder="Высота уп, см"
             type="text"
+            _ngcontent-serverapp-c127
             v-model="marketplace.heightSM">
           <input
             placeholder="Вес кг"
+            _ngcontent-serverapp-c127
             type="text"
             v-model="marketplace.weightKG">
         </div>
@@ -81,6 +88,7 @@ watch(marketplace, () => {
         <input
           disabled
           type="text"
+          _ngcontent-serverapp-c127
           v-model="marketplace.inRUB">
       </div>
     </div>
@@ -92,6 +100,7 @@ watch(marketplace, () => {
         </div>
         <input
           type="text"
+          _ngcontent-serverapp-c127
           v-model="marketplace.defective">
       </div>
       <div class="form-item">
@@ -100,6 +109,7 @@ watch(marketplace, () => {
         </div>
         <input
           disabled
+          _ngcontent-serverapp-c127
           type="text"
           v-model="marketplace.defectiveRUB">
       </div>
@@ -110,6 +120,7 @@ watch(marketplace, () => {
         </div>
         <input
           disabled
+          _ngcontent-serverapp-c127
           type="text"
           v-model="marketplace.storaging">
       </div>
@@ -118,6 +129,7 @@ watch(marketplace, () => {
           <p>В рублях</p>
         </div>
         <input
+          _ngcontent-serverapp-c127
           disabled
           type="text"
           v-model="marketplace.storagingRUB">
@@ -129,6 +141,7 @@ watch(marketplace, () => {
         </div>
         <input
           type="text"
+          _ngcontent-serverapp-c127
           v-model="marketplace.ranson">
       </div>
       <div class="form-item">
@@ -137,6 +150,7 @@ watch(marketplace, () => {
         </div>
         <input
           disabled
+          _ngcontent-serverapp-c127
           type="text"
           v-model="marketplace.logisticsWithRanson">
       </div>
