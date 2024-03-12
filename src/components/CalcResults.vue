@@ -45,11 +45,15 @@ const {state} = useStore() // all values you can get from this object
   border-radius: 18px;
   background: rgba(var(--secondary-rgb), 10%);
 
+  @media (max-width: 768px) {
+    background: #FBFBFC;
+  }
   .item-title {
     margin-bottom: 28px;
   }
   &-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 
     &-item {

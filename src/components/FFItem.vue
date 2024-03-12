@@ -50,7 +50,7 @@ watch(ff, () => {
 <style lang="scss" scoped>
 .item {
   .content {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 240px 1fr;
   }
 }
 </style>

@@ -72,10 +72,13 @@ watch(bills, () => {
 <style lang="scss" scoped>
 .items {
   grid-template-columns: 50% 50%;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-  .item.bills .content {
-    grid-template-columns: 2fr 1fr 100px;
-  }
-
+.item.bills .content {
+  grid-template-columns: 2fr 1fr 100px;
+}
 </style>

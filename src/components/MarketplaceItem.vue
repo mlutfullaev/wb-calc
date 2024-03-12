@@ -150,9 +150,21 @@ watch(marketplace, () => {
     &.first {
       grid-template-columns: 20% 18% 100px 1fr 100px;
       padding-bottom: 20px;
+
+      @media (max-width: 1100px) {
+        grid-template-columns: 2fr 2fr 1fr;
+
+        .form-item:nth-child(4) {
+          grid-column: 1 / 3;
+        }
+      }
     }
     &.second {
       grid-template-columns: 10% 100px 18% 100px 1fr 2fr;
+
+      @media (max-width: 1100px) {
+        grid-template-columns: 2fr 3fr 2fr 1fr;
+      }
     }
   }
   .form-item-inputs {

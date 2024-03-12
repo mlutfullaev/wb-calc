@@ -102,3 +102,15 @@ input {
     }
   }
 }
+
+.tablet {
+  display: none;
+}
+@media (max-width: 768px) {
+  .laptop {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+}
