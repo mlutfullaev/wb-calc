@@ -47,7 +47,7 @@ defineProps({ hint: String })
     border-radius: 4px;
     font-size: 12px;
     width: max-content;
-    max-width: 150px;
+    max-width: 200px;
 
     &::before {
       content: '';

@@ -24,7 +24,7 @@ watch(bills, () => {
         <div class="form-item">
           <div class="form-label required">
             <p>Налоговый режим</p>
-            <HintUI hint="Является необязательным для заполнения блоком. Данные из этого блока участвуют в расчете показателей прибыльности, следовательно, его заполнение сделает расчет прибыльности товара более достоверным." />
+            <HintUI hint="Выберите применяемый Вами налоговый режим" />
           </div>
           <model-select
             _ngcontent-serverapp-c123
@@ -37,7 +37,7 @@ watch(bills, () => {
         <div class="form-item">
           <div class="form-label">
             <p>Налоговая ставка, %</p>
-            <HintUI hint="Стоимость упаковки товара за 1 единицу" />
+            <HintUI hint="Процент налога выбранного налогового режима" />
           </div>
           <input type="text" _ngcontent-serverapp-c127 placeholder="Стоимость упаковки за 1 ед." v-model="bills.taxRate">
         </div>
@@ -59,7 +59,7 @@ watch(bills, () => {
         <div class="form-item">
           <div class="form-label">
             <p>Прочие расходы, ₽</p>
-            <HintUI hint="Стоимость упаковки товара за 1 единицу" />
+            <HintUI hint="Расходы на рекламу, маркетинг, доп. логистику, непредвиденные расходы и др." />
           </div>
           <input
             placeholder="Реклама, форсмажор и т.д."

@@ -13,27 +13,27 @@ const {state} = useStore() // all values you can get from this object
     <div class="results-content">
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <span>Инвестиции <HintUI hint="HELLOOO" /></span>
+        <span>Инвестиции <HintUI hint="Общая сумма затрат на 1 единицу товара" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <span>Доходность <HintUI hint="HELLOOO" /></span>
+        <span>Доходность <HintUI hint="Доля прибыли от вложений" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <span>Маржинальность <HintUI hint="HELLOOO" /></span>
+        <span>Маржинальность <HintUI hint="Доля прибыли в выручке" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <span>Маржинальная прибыль <HintUI hint="HELLOOO" /></span>
+        <span>Маржинальная прибыль <HintUI hint="Маржа - разница между выручкой и всеми расходами" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <span>Минимальная цена <HintUI hint="HELLOOO" /></span>
+        <span>Минимальная цена <HintUI hint="Минимальная цена реализации на WB для исключения убытков" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <span>Максимальная скидка <HintUI hint="HELLOOO" /></span>
+        <span>Максимальная скидка <HintUI hint="Максимальное значение скидки для исключения убытков" /></span>
       </div>
     </div>
   </div>

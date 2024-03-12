@@ -26,24 +26,24 @@ watch(amount, () => {
         <div class="form-item">
           <div class="form-label required">
             <p>Мои вложения, ₽</p>
-            <HintUI hint="Выберите из списка товар" />
+            <HintUI hint="Планируемая сумма инвестиций в товар" />
           </div>
           <input _ngcontent-serverapp-c127 placeholder="Введите сумму инвестиции" v-model="amount" type="text">
         </div>
         <div class="batch-card">
-          <span>Кол-во товара</span> <HintUI hint="helloooo"/>
+          <span>Кол-во товара</span> <HintUI hint="Количество планируемого к поставке товара (рассчитывается автоматически)"/>
           <p>1 870 шт</p>
         </div>
         <div class="batch-card">
-          <span>Выручка</span> <HintUI hint="helloooo"/>
+          <span>Выручка</span> <HintUI hint="Доход от реализации всей партии (без вычета издержек) (рассчитывается автоматически)"/>
           <p>1 870 шт</p>
         </div>
         <div class="batch-card">
-          <span>Маржинальная прибыль</span> <HintUI hint="helloooo"/>
+          <span>Маржинальная прибыль</span> <HintUI hint="Разница между выручкой и всеми расходами (рассчитывается автоматически)"/>
           <p>1 870 шт</p>
         </div>
         <div class="batch-card">
-          <span>Точка безубыточности</span> <HintUI hint="helloooo"/>
+          <span>Точка безубыточности</span> <HintUI hint="Количество товара, которое необходимо реализовать для возврата инвестиций и “выхода в 0” (рассчитывается автоматически)"/>
           <p>1 870 шт</p>
         </div>
       </div>
