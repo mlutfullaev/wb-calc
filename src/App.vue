@@ -70,6 +70,9 @@ const modalActive = ref(false)
     @media (max-width: 768px) {
       background: #FBFBFC;
     }
+    @media (max-width: 450px) {
+      text-align: center;
+    }
   }
   h1 {
     font-size: 24px;

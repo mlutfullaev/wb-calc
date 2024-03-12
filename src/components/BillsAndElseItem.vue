@@ -80,5 +80,8 @@ watch(bills, () => {
 
 .item.bills .content {
   grid-template-columns: 2fr 1fr 100px;
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

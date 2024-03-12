@@ -48,6 +48,7 @@ watch(props, () => {
   user-select: none;
   pointer-events: none;
   z-index: -1;
+  padding: 10px;
 
   &.active {
     opacity: 1;
@@ -56,10 +57,15 @@ watch(props, () => {
     z-index: 3;
   }
   &-content {
-    width: 700px;
-    height: 400px;
+    max-width: 1020px;
+    width: 100%;
+    height: 600px;
     position: relative;
 
+    @media (max-width: 768px) {
+      max-width: 700px;
+      height: 400px;
+    }
     &.overlay {
       .overlay {
         opacity: 1;
@@ -86,6 +92,7 @@ watch(props, () => {
       transition: .3s;
     }
     .overlay {
+      padding: 20px;
       position: absolute;
       top: 0;
       left: 0;
@@ -103,19 +110,28 @@ watch(props, () => {
       flex-direction: column;
       gap: 20px;
       z-index: 1;
+      text-align: center;
 
       h2 {
         color: var(--secondary);
         font-size: 48px;
         font-weight: 700;
+
+        @media (max-width: 450px) {
+          font-size: 28px;
+        }
       }
       button {
         border-radius: 50%;
       }
       p {
         font-size: 28px;
-        color: rgba(var(--primary-rgb), 70%);
+        color: #fff;
         text-transform: uppercase;
+
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
       }
     }
   }

@@ -55,23 +55,6 @@ const {state} = useStore() // all values you can get from this object
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-
-    &-item {
-      p {
-        font-size: 22px;
-        font-weight: 700;
-        padding-bottom: 10px;
-      }
-      > span {
-        font-size: 12px;
-        color: rgba(var(--primary-rgb), 80%);
-        padding-right: 5px;
-
-        .hint-content {
-          top: 100%
-        }
-      }
-    }
   }
 }
 </style>

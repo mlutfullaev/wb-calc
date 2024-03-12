@@ -63,5 +63,8 @@
   a {
     color: #ffffff
   }
+  @media (max-width: 400px) {
+    flex-direction: column
+  }
 }
 </style>

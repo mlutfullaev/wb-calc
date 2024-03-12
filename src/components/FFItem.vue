@@ -51,6 +51,13 @@ watch(ff, () => {
 .item {
   .content {
     grid-template-columns: 1fr 1fr 240px 1fr;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

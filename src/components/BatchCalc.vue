@@ -67,7 +67,7 @@ watch(amount, () => {
   }
   &-content {
     transition: .3s;
-    max-height: 400px;
+    max-height: 500px;
     overflow: hidden;
 
     &.hidden {
@@ -75,6 +75,39 @@ watch(amount, () => {
     }
     .content {
       display: flex;
+      width: max-content;
+
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+
+        .form-item {
+          width: 100%;
+          grid-column: 1 / 3;
+
+          input {
+            max-width: 300px;
+          }
+        }
+      }
+      @media (max-width: 450px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .batch-card {
+          width: 100%;
+          padding: 10px;
+        }
+        .batch-card:nth-child(4),
+        .batch-card:nth-child(5) {
+          grid-column: 1 / 3;
+          width: 100%;
+        }
+      }
+      @media (max-width: 320px) {
+        width: calc(100% - 20px);
+        .batch-card {
+          grid-column: 1 / 3 !important;
+        }
+      }
     }
     .txt {
       padding-bottom: 20px;

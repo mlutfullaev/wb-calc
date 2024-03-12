@@ -52,5 +52,9 @@ watch(product, () => {
 <style lang="scss" scoped>
 .content {
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
