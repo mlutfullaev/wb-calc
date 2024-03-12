@@ -183,14 +183,19 @@ watch(marketplace, () => {
         }
         .form-item:nth-child(4) {
           grid-column: 1 / 5;
-
-          .form-item-inputs {
-            grid-template-columns: 1fr 1fr;
-          }
+        }
+        .form-item-inputs {
+          grid-template-columns: 1fr 1fr;
         }
         .form-item:nth-child(5) {
           display: none;
         }
+      }
+      @media (max-width: 340px) {
+        .form-item-inputs {
+          grid-template-columns: 1fr;
+        }
+
       }
     }
     &.second {
@@ -212,6 +217,14 @@ watch(marketplace, () => {
         .form-item:nth-child(5),
         .form-item:nth-child(6), {
           grid-column: 1 / 3;
+        }
+      }
+      @media (max-width: 340px) {
+        grid-template-columns: 1fr;
+
+        .form-item:nth-child(5),
+        .form-item:nth-child(6), {
+          grid-column: 1 / 2;
         }
       }
     }

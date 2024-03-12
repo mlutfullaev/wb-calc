@@ -22,7 +22,7 @@ export const useStore = defineStore('store', () => {
     state.value = initial
     clearCount.value = clearCount.value++
     localStorage.setItem('store', JSON.stringify(initial))
-    console.log(true)
+    location.reload()
   }
 
   return {state, changeState, clear, clearCount}

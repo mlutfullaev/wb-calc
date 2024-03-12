@@ -15,8 +15,8 @@ const clearCount = ref(0)
 const {clear} = useStore()
 
 const onClear = () => {
-  clearCount.value = clearCount.value + 1;
-  console.log(clearCount.value)
+  // clearCount.value = clearCount.value + 1;
+  // console.log(clearCount.value)
   clear()
 }
 </script>
