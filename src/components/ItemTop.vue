@@ -65,13 +65,19 @@ const onShare = () => {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(var(--primary-rgb), 4%);
   margin-bottom: 20px;
+  flex-wrap: wrap;
 
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .btn {
     &-reset {
       border-color: rgba(212, 96, 96, 50%);
       color: rgba(212, 96, 96, 50%);
       transition: .3s;
       margin-right: auto;
+
       &:hover {
         border-color: #D46060;
         color: #D46060;
@@ -81,6 +87,9 @@ const onShare = () => {
       }
       svg {
         color: rgba(212, 96, 96, 50%);
+      }
+      @media (max-width: 768px) {
+        display: none;
       }
     }
     &-share {

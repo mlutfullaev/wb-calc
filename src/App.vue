@@ -1,5 +1,13 @@
 <script setup>
 import ItemTop from "@/components/ItemTop.vue";
+import ProductItem from "@/components/ProductItem.vue";
+import {reactive} from "vue";
+import FFItem from "@/components/FFItem.vue";
+import MarketplaceItem from "@/components/MarketplaceItem.vue";
+import BillsAndElseItem from "@/components/BillsAndElseItem.vue";
+import CalcResults from "@/components/CalcResults.vue";
+import TheFooter from "@/components/TheFooter.vue";
+const store = reactive({})
 </script>
 
 <template>
@@ -10,11 +18,17 @@ import ItemTop from "@/components/ItemTop.vue";
     </div>
     <div class="item">
       <ItemTop />
+      <ProductItem />
     </div>
+    <FFItem />
+    <MarketplaceItem />
+    <BillsAndElseItem />
+    <CalcResults />
+    <TheFooter />
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .app {
   width: 100%;
   padding: 20px;
@@ -24,6 +38,9 @@ import ItemTop from "@/components/ItemTop.vue";
   flex-direction: column;
   gap: 40px;
 
+  @media (max-width: 768px) {
+    background: #FBFBFC;
+  }
   h1 {
     font-size: 24px;
     font-weight: 700;
@@ -33,7 +50,20 @@ import ItemTop from "@/components/ItemTop.vue";
       color: var(--pink)
     }
   }
-  .item {
+  .item-title {
+    font-size: 16px;
+    padding-bottom: 12px;
+
+    span {
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(var(--primary-rgb), 40%);
+      padding-left: 5px;
+    }
+  }
+  .content {
+    display: grid;
+    gap: 12px;
   }
 }
 </style>
