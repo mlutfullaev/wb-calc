@@ -22,7 +22,7 @@ defineProps({ hint: String })
     width: 16px;
     border-radius: 50%;
     height: 16px;
-    background: rgba(var(--primary-rgb), 16%);
+    background: rgba(var(--primary-rgb), 30%);
     color: #fff;
     display: flex;
     justify-content: center;

@@ -68,13 +68,15 @@ watch(amount, () => {
   &-content {
     transition: .3s;
     max-height: 500px;
-    overflow: hidden;
+    opacity: 1;
 
     &.hidden {
+      opacity: 0;
       max-height: 0;
     }
     .content {
       display: flex;
+      align-items: end;
       width: calc(100% - 20px);
 
       @media (max-width: 768px) {
@@ -113,6 +115,7 @@ watch(amount, () => {
     }
     .txt {
       padding-bottom: 20px;
+      font-size: 13px;
     }
     .batch-card {
       padding: 20px;
@@ -123,9 +126,9 @@ watch(amount, () => {
         font-size: 12px;
         color: rgba(var(--primary-rgb), 70%);
         padding-right: 5px;
-        margin-bottom: 10px;
       }
       p {
+        padding-top: 8px;
         font-size: 13px;
         font-weight: 500;
         color: var(--primary);

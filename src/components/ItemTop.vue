@@ -90,7 +90,7 @@ const onShare = () => {
         color: rgba(212, 96, 96, 50%);
       }
       @media (max-width: 768px) {
-        display: none;
+        margin-right: 0;
       }
     }
     &-share {
