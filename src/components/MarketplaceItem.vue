@@ -192,6 +192,11 @@ watch(marketplace, () => {
         }
       }
       @media (max-width: 340px) {
+        grid-template-columns: 1fr;
+
+        .form-item {
+          grid-column: 1 / 2 !important;
+        }
         .form-item-inputs {
           grid-template-columns: 1fr;
         }
