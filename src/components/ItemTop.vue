@@ -48,7 +48,7 @@ const onClear = () => {
       </svg>
       Поделиться калькулятором
     </button>
-    <button class="btn btn-video">
+    <button class="btn btn-video" @click="$emit('openModal')">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.1 7.98036C11.5 8.2113 11.5 8.78865 11.1 9.01959L6.15 11.8775C5.75 12.1084 5.25 11.8197 5.25 11.3579L5.25 5.64209C5.25 5.18021 5.75 4.89154 6.15 5.12248L11.1 7.98036Z" fill="#263053"/>
       </svg>

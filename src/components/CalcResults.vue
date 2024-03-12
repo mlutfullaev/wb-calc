@@ -13,58 +13,40 @@ const {state} = useStore() // all values you can get from this object
     <div class="results-content">
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <div>
-          <span>Инвестиции</span>
-          <HintUI hint="HELLOOO" />
-        </div>
+        <span>Инвестиции <HintUI hint="HELLOOO" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <div>
-          <span>Доходность</span>
-          <HintUI hint="HELLOOO" />
-        </div>
+        <span>Доходность <HintUI hint="HELLOOO" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <div>
-          <span>Маржинальность</span>
-          <HintUI hint="HELLOOO" />
-        </div>
+        <span>Маржинальность <HintUI hint="HELLOOO" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <div>
-          <span>Маржинальная прибыль</span>
-          <HintUI hint="HELLOOO" />
-        </div>
+        <span>Маржинальная прибыль <HintUI hint="HELLOOO" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <div>
-          <span>Минимальная цена</span>
-          <HintUI hint="HELLOOO" />
-        </div>
+        <span>Минимальная цена <HintUI hint="HELLOOO" /></span>
       </div>
       <div class="results-content-item">
         <p>1 400,22 ₽</p>
-        <div>
-          <span>Максимальная скидка</span>
-          <HintUI hint="HELLOOO" />
-        </div>
+        <span>Максимальная скидка <HintUI hint="HELLOOO" /></span>
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .results {
   padding: 49px 30px;
   border-radius: 18px;
   background: rgba(var(--secondary-rgb), 10%);
 
-  h2 {
-    padding-bottom: 40px;
+  .item-title {
+    margin-bottom: 28px;
   }
   &-content {
     display: flex;
@@ -76,14 +58,14 @@ const {state} = useStore() // all values you can get from this object
         font-weight: 700;
         padding-bottom: 10px;
       }
-      div {
-        display: flex;
-        align-items: center;
-      }
-      span {
+      > span {
         font-size: 12px;
         color: rgba(var(--primary-rgb), 80%);
-        padding-right: 10px;
+        padding-right: 5px;
+
+        .hint-content {
+          top: 100%
+        }
       }
     }
   }

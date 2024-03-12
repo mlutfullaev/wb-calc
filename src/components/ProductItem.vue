@@ -25,9 +25,10 @@ watch(product, () => {
           <HintUI hint="Выберите из списка товар" />
         </div>
         <model-select
-            :options="productOptions"
-            v-model="product.object"
-            placeholder="Выберите из списка"
+
+          :options="productOptions"
+          v-model="product.object"
+          placeholder="Выберите из списка"
         >
         </model-select>
       </div>

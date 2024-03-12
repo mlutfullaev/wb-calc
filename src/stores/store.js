@@ -6,10 +6,11 @@ const initial = {
   ff: {},
   bills: {},
   marketplace: {},
-  batchCalc: {}
+  batchCalc: {},
+  amount: ''
 }
 export const useStore = defineStore('store', () => {
-  const state = ref(JSON.parse(localStorage.getItem('store')) || initial)
+  const state = ref(JSON.parse(localStorage.getItem('store2')) || initial)
 
   const changeState = (val) => {
     state.value = {...state.value, val}

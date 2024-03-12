@@ -9,6 +9,11 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--primary);
 }
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 .btn {
   padding: 8px 10px;
@@ -55,6 +60,9 @@ input {
     background: rgba(var(--primary-rgb), 16%);
   }
 }
+.ui.selection.dropdown, .ui.selection.dropdown .menu {
+  border-color: rgba(var(--primary-rgb), 16%) !important;
+}
 .ui.selection.dropdown, .ui.search.selection.dropdown>input.search {
   padding: 18px 20px;
   font-size: 13px;
@@ -67,13 +75,20 @@ input {
   padding: 9px !important;
   font-size: 13px;
   background: rgba(var(--primary-rgb), 2%);
+  border-radius: 3px;
+  transition: .3s;
   margin: 2px 4px;
+
+  &:hover {
+    background: rgba(var(--primary-rgb), 16%);
+  }
 }
 .form-item {
   .form-label {
     display: flex;
     align-items: center;
     padding-bottom: 14px;
+    color: rgba(var(--primary-rgb), 70%);
 
     &.required {
       p::after {

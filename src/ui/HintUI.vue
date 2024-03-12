@@ -5,7 +5,7 @@ defineProps({ hint: String })
 <template>
   <div class="hint">
     <span>?</span>
-    <div>{{ hint }}</div>
+    <div class="hint-content">{{ hint }}</div>
   </div>
 </template>
 

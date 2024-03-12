@@ -1,13 +1,16 @@
 <script setup>
 import ItemTop from "@/components/ItemTop.vue";
 import ProductItem from "@/components/ProductItem.vue";
-import {reactive} from "vue";
+import {reactive, ref} from "vue";
 import FFItem from "@/components/FFItem.vue";
 import MarketplaceItem from "@/components/MarketplaceItem.vue";
 import BillsAndElseItem from "@/components/BillsAndElseItem.vue";
 import CalcResults from "@/components/CalcResults.vue";
 import TheFooter from "@/components/TheFooter.vue";
+import BatchCalc from "@/components/BatchCalc.vue";
+import ModalVideo from "@/components/ModalVideo.vue";
 const store = reactive({})
+const modalActive = ref(false)
 </script>
 
 <template>
@@ -17,13 +20,15 @@ const store = reactive({})
       <p class="txt">Калькулятор цены товара и размера скидки на Вайлдберриз для продавцов рассчитывает конечную стоимость товаров с учётом комиссии, всех скидок, хранения товаров на складе и множества других факторов, актуальных в 2024 году.</p>
     </div>
     <div class="item">
-      <ItemTop />
+      <ItemTop @openModal="modalActive = true" />
       <ProductItem />
     </div>
     <FFItem />
     <MarketplaceItem />
     <BillsAndElseItem />
+    <BatchCalc />
     <CalcResults />
+    <ModalVideo :active="modalActive" @close="modalActive = false"/>
     <TheFooter />
   </div>
 </template>
