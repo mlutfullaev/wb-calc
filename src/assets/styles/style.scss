@@ -35,7 +35,11 @@ button {
 
 .txt {
   font-size: 14px;
-  color: rgba(var(--primary-rgb), 50%)
+  color: rgba(var(--primary-rgb), 50%);
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 }
 
 input {

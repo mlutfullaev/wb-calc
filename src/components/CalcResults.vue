@@ -46,7 +46,7 @@ const {state} = useStore() // all values you can get from this object
   background: rgba(var(--secondary-rgb), 10%);
 
   @media (max-width: 768px) {
-    background: #FBFBFC;
+    //background: #FBFBFC;
   }
   .item-title {
     margin-bottom: 28px;
